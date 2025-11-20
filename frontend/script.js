@@ -111,7 +111,9 @@ document.getElementById("contactForm").addEventListener("submit", async function
 
   try {
     // adjust URL if your server runs on another port/origin
-    const res = await fetch('http://localhost:5000/api/contact', {
+    // const res = await fetch('http://localhost:5000/api/contact', {
+        const res = await fetch('https://divyanshu-portfolio-xzqo.onrender.com/api/contact', {
+
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
